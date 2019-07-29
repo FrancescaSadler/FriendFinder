@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Results</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body class="container">
+  <nav>
+    <a href="/">
+      <h1>Find Out What 80's Teen Movie You Are</h1>
+    </a>
+  </nav>
+
+
+
+  <form>
+
+    <div class="form-group">
+      <label for="submitterName">What's your Name?</label>
+      <input type="text" class="form-control" id="name" placeholder="Molly Ringwald" required>
+    </div>
+
+    <h4><strong>Question 1</strong></h4>
+    <h4>I have a demanding group of best friends</h4>
+    <select class="chosen-select" id="q1" required>
+      <option value="">Select Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <h4><strong>Question 2</strong></h4>
+    <h4> I often find myself feeling invisible</h4>
+    <select class="chosen-select" id="q2" required>
+      <option value="">Select Option</option>
+      <option value="1" type="number">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <h4><strong>Question 3</strong></h4>
+    <h4> I find myself befriending unlikely people </h4>
+    <select class="chosen-select" id="q3" required>
+      <option value="">Select Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <h4><strong>Question 4</strong></h4>
+    <h4> I dream to become a pop star! </h4>
+    <select class="chosen-select" id="q4" required>
+      <option value="">Select Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <h4><strong>Question 5</strong></h4>
+    <h4> I love looking after people and animals </h4>
+    <select class="chosen-select" id="q5" required>
+      <option value="">Select Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <h4><strong>Question  6</strong></h4>
+    <h4> People usually underestimate me </h4>
+    <select class="chosen-select" id="q6" required>
+      <option value="">Select Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <h4><strong>Question 7</strong></h4>
+    <h4> I march to beat of my own drum </h4>
+    <select class="chosen-select" id="q7" required>
+      <option value="">Select Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <h4><strong>Question 8</strong></h4>
+    <h4> I will go out my comfort zone in order to help someone </h4>
+    <select class="chosen-select" id="q8" required>
+      <option value="">Select Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <h4><strong>Question 9</strong></h4>
+    <h4> I have unrealistic expectations</h4>
+    <select class="chosen-select" id="q9" required>
+      <option value="">Select Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <h4><strong>Question 10</strong></h4>
+    <h4> I will buy my way to happiness</h4>
+    <select class="chosen-select" id="q10" required>
+      <option value="">Select Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br> </br>
+
+    <button type="submit" class="btn btn-warning btn-lg " id="send"><i class="fa fa-check-circle"
+        aria-hidden="true"></i>
+      Submit</button>
+
+  </form>
+
+  
+
+<!-- Modal -->
+<div id="results-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div> -->
+      <div class="modal-body">
+        <p id= "match-name">Some text in the modal.</p>
+        <img id = "image" width = "100" src= ""></img>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  <script>
+
+    // NEED CLARIFICATION ON JS
+
+    // // Chosen CSS
+    // var config = {
+    //   ".chosen-select": {},
+    //   ".chosen-select-deselect": {
+    //     allow_single_deselect: true
+    //   },
+    //   ".chosen-select-no-single": {
+    //     disable_search_threshold: 10
+    //   },
+    //   ".chosen-select-no-results": {
+    //     no_results_text: "Oops, nothing found!"
+    //   },
+    //   ".chosen-select-width": {
+    //     width: "95%"
+    //   }
+    // };
+
+    // // Capture the form inputs
+    $("#send").on("click", (event) => {
+      event.preventDefault();
+      console.log("check")
+      // Create an object for the user"s data
+      // var userData = {
+      //   name: $("#name").val(),
+      //   scores: [
+      //     $("#q1").val(),
+      //     $("#q2").val()
+      //     // $("#q3").val(),
+      //     // $("#q4").val(),
+      //     // $("#q5").val(),
+      //     // $("#q6").val(),
+      //     // $("#q7").val(),
+      //     // $("#q8").val(),
+      //     // $("#q9").val(),
+      //     // $("#q10").val()
+      //   ]
+
+      // };
+
+      var scores = [
+         $("#q1").val(),
+          $("#q2").val(),
+          $("#q3").val(),
+          $("#q4").val(),
+          $("#q5").val(),
+          $("#q6").val(),
+          $("#q7").val(),
+          $("#q8").val(),
+          $("#q9").val(),
+          $("#q10").val()
+      ]
+
+      // var newArray = [];
+      // for (var i = 0; i < scores.length; i++) {
+      //   newArray.push(parseInt(scores[i]))
+      // }
+
+      var userData = {
+        name: $("#name").val(),
+        scores : scores
+      }
+
+
+      console.log(userData);
+
+      //   // AJAX post the data to the friends API.
+      $.post("/api/friends", userData)
+        .then(function (data) {
+          console.log(data);
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+
+          $("#image").attr("src",data.photo);
+
+
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+
+        });
+
+    });
+
+
+  </script>
+
+</body>
+
+</html>
