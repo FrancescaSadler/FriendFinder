@@ -64,7 +64,7 @@ module.exports = function(app){
 
     // Finally save the user's data to the database (this has to happen AFTER the check. otherwise,
     // the database will always return that the user is the user's best friend).
-    // friends.push(newArray);
+    friends.push(newArray);
     // console.log(newArray, "saves user data")
    
   
