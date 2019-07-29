@@ -5,14 +5,6 @@ module.exports = function(app){
         res.send(friends)
     })
 
-    // app.get("/api/responses", function(req, res){
-    //     res.send(responses)
-    // })
-
-    // app.post("/api/responses", function (req,res){
-    //     responses.push(req.body);
-    //     res.send(true);
-    // })
 
     app.post("/api/friends", function (req,res){
         console.log("text",req.body)
@@ -24,16 +16,7 @@ module.exports = function(app){
           newArray.push(parseInt(scores[i]))
         }
         console.log(newArray);
-        // responses.push(req.body);
-
-        // put in for loop 
-        
-
-        //return the friend that matches and will add to friends.js file
-        
-        // res.send(friends);
-        
-    // });
+   
 
     var bestMatch = {
       name: "",

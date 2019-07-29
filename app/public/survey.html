@@ -170,10 +170,7 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <!-- <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div> -->
+     
       <div class="modal-body">
         <p id= "match-name">Some text in the modal.</p>
         <img id = "image" width = "100" src= ""></img>
@@ -191,46 +188,13 @@
 
   <script>
 
-    // NEED CLARIFICATION ON JS
-
-    // // Chosen CSS
-    // var config = {
-    //   ".chosen-select": {},
-    //   ".chosen-select-deselect": {
-    //     allow_single_deselect: true
-    //   },
-    //   ".chosen-select-no-single": {
-    //     disable_search_threshold: 10
-    //   },
-    //   ".chosen-select-no-results": {
-    //     no_results_text: "Oops, nothing found!"
-    //   },
-    //   ".chosen-select-width": {
-    //     width: "95%"
-    //   }
-    // };
+    
 
     // // Capture the form inputs
     $("#send").on("click", (event) => {
       event.preventDefault();
       console.log("check")
-      // Create an object for the user"s data
-      // var userData = {
-      //   name: $("#name").val(),
-      //   scores: [
-      //     $("#q1").val(),
-      //     $("#q2").val()
-      //     // $("#q3").val(),
-      //     // $("#q4").val(),
-      //     // $("#q5").val(),
-      //     // $("#q6").val(),
-      //     // $("#q7").val(),
-      //     // $("#q8").val(),
-      //     // $("#q9").val(),
-      //     // $("#q10").val()
-      //   ]
-
-      // };
+      
 
       var scores = [
          $("#q1").val(),
@@ -245,10 +209,7 @@
           $("#q10").val()
       ]
 
-      // var newArray = [];
-      // for (var i = 0; i < scores.length; i++) {
-      //   newArray.push(parseInt(scores[i]))
-      // }
+     
 
       var userData = {
         name: $("#name").val(),
@@ -262,13 +223,11 @@
       $.post("/api/friends", userData)
         .then(function (data) {
           console.log(data);
-          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+         
           $("#match-name").text(data.name);
 
           $("#image").attr("src",data.photo);
 
-
-          // Show the modal with the best match
           $("#results-modal").modal("toggle");
 
         });
