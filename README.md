@@ -24,4 +24,9 @@
      
 
 ## Demo 
-https://drive.google.com/file/d/1bGtUMDXrBSM0cJRZiOCveCFHyfCO_7TV/view
+
+https://drive.google.com/file/d/1bGtUMDXrBSM0cJRZiOCveCFHyfCO_7TV/view 
+
+## Try it yourself! 
+
+https://stark-fortress-71409.herokuapp.com/survey
