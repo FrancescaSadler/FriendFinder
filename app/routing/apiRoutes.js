@@ -21,7 +21,7 @@ module.exports = function(app){
     var bestMatch = {
       name: "",
       photo: "",
-      friendDifference: Infinity
+      friendDifference: 41
     };
 
     // Here we take the result of the user"s survey POST and parse it.
